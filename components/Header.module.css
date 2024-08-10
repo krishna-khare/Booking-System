@@ -1,0 +1,57 @@
+/* Header.module.css */
+
+/* Container for the header */
+.headerContainer {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Ensure header is transparent */
+    position: fixed; /* Fix the header at the top of the page */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the header is on top of other elements */
+    box-shadow: none; /* Remove any default shadow */
+    border-bottom: none; /* Remove any bottom border */
+}
+
+/* Logo styling */
+.logo img {
+    margin-left: 40px;
+    width: 20px; /* Adjust the logo size */
+    background-color: transparent;
+}
+
+/* Actions container (e.g., search, cart, profile icons) */
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions a {
+    margin-right: 50px;
+    color: #fff; 
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.actions a:hover {
+    color: #ddd;
+}
+
+/* SVG Icons (Search, Cart, etc.) */
+.actions svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* User profile image styling */
+.actions img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; /* Make the profile image circular */ /* Add a white border around the image */
+}
+

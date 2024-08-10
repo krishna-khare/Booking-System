@@ -1,0 +1,89 @@
+/* Container for the entire form */
+.ticketBookingContainer {
+    background-color: #263039; /* Dark background for the form */
+    color: #ecf0f1; /* Light text color for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: auto;
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+
+/* Form title */
+.formTitle {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #8ccaf4; /* Bright blue for the title */
+}
+
+/*    margin-bottom: 20px;
+}
+
+/* Labels for inputs */
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+/* Input fields */
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fcfcfc; /* Dark border */
+    border-radius: 4px;
+    background-color: #3c556e; /* Dark background for inputs */
+    color: #ecf0f1; /* Light text color for inputs */
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+.button {
+    background-color: #3498db; /* Blue background for buttons */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 12px;
+    padding: 10px 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display:inline-block;
+    width: 30%;
+}
+
+.button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Button container */
+.buttonContainer {
+    margin-top: 20px;
+}
+
+/* Ticket section styling */
+.ticketSection {
+    margin-top: 30px;
+    padding: 20px;
+    border-style:solid;
+    border-color: #ffffff;
+    border-width: 4px;
+    border-radius: 10px;
+    width: 50%;
+    background-color: #6799a5;
+    color: #000000;
+    font-style: italic,bold;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.ticketSection:hover{
+    transform: scale(1.03);
+
+}
+.ticketCard{
+    margin-bottom:20px;
+}

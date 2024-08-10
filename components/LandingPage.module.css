@@ -1,0 +1,169 @@
+/* Flex container for side-by-side layout */
+.mainContainer {
+    display:flex;
+    flex-direction: row; /* Align children in a row */
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Common styling for sections */
+.hero, .product {
+    flex: 1; /* Allow both sections to take up equal space */
+    display: flex;
+    width: 100%;
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center;
+    justify-content: center;
+    padding: 120px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden; /* Ensure scaling image doesn't overflow */
+    transition: width 0.5s ease-in-out, flex-grow 0.5s ease-in-out;
+}
+
+/* Hero section styling */
+.hero {
+    background-color: #00b0ff;
+}
+
+.hero .content {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    z-index: 2; /* Ensure text stays on top */
+    position: relative; /* Create a stacking context */
+}
+
+.hero .content h1 {
+    text-align: left;
+    font-family: 'Exb FLF', sans-serif;
+    font-style: italic;
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero .content p {
+    text-align: left;
+    font-size: 1em;
+    font-family: 'Exb FLF', sans-serif;
+    font-style: italic;
+    line-height: 1.2;
+}
+
+.hero .image {
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+    z-index: 1; /* Ensure image stays below text */
+    position: absolute; /* Position image within the section */
+    bottom: 50; /* Align image to the bottom */
+}
+
+.hero .image img {
+    width: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.hero:hover {
+    transform: scale(1.2);
+}
+
+.hero:hover .image img {
+    transform: scale(0.7);
+}
+
+/* Product section styling */
+.product {
+    background-color: #ffc107;
+}
+
+.product .content {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    z-index: 2; /* Ensure text stays on top */
+    position: relative; /* Create a stacking context */
+}
+
+.product .content h1 {
+    text-align: left;
+    font-family: 'Exb FLF', sans-serif;
+    font-style: italic;
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.product .content p {
+    text-align: left;
+    font-size: 1em;
+    font-family: 'Exb FLF', sans-serif;;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.product .image {
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+    z-index: 1; /* Ensure image stays below text */
+    position: absolute; /* Position image within the section */
+    bottom: 50; /* Align image to the bottom */
+}
+
+.product .image img {
+    width: 80%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product:hover .image img {
+    transform: scale(1.2);
+}
+
+/* Hover effect: increase width */
+.hero:hover {
+    flex-grow: 2;
+}
+
+.product:hover {
+    flex-grow: 3;
+}
+
+/* Ensure the non-hovered section shrinks */
+.hero:hover ~ .product,
+.product:hover ~ .hero {
+    flex-grow: 0.5;
+}
+
+
+/* Button styling */
+.button {
+    background-color: #ffffff00;
+    color: #ffffff;
+    padding: 9px 15px;
+    text-align: left;
+    border-style:solid;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 90px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 2; /* Ensure button stays on top */
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+

@@ -1,0 +1,12 @@
+/* styles/TicketBooking.module.css */
+.container {
+    padding: 20px;
+    width: auto;
+    margin: 0 0;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  

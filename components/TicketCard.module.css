@@ -1,0 +1,17 @@
+.qrCode {
+    margin: 6px 0;
+    text-align: right;
+    padding: 20px;
+    margin-top: -130px;
+  }
+  
+  .qrCode img {
+    max-width: 100%;
+    
+  }
+  .ticketCard{
+  padding: 20px;
+  background-color: #ffffffd8;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  }

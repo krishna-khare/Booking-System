@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    background-color: transparent !important;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    border: none;
+    scroll-behavior: smooth;
+}
+
