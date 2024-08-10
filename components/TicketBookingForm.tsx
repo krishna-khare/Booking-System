@@ -53,8 +53,8 @@ const TicketBookingForm: React.FC = () => {
         <button className={styles.button} onClick={handleGetTickets}>Get Tickets</button>
       </div>
       <div className={styles.ticketSection}>
-        {tickets.map((ticket, index) => (
-          <TicketCard ticket={ticket} showGuests={false} />
+        {tickets.map((ticket: Ticket, index: number) => (
+          <TicketCard key={index} ticket={ticket} showGuests={false} />
         ))}
       </div>
     </div>
